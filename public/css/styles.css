@@ -2,8 +2,8 @@
   --light-pink: #fad2d2;
   --dark-pink: #fca2b1;
   --red: #822003;
-  --brown: rgb(107, 60, 10);
-  --light-brown: rgba(107, 60, 10, 0.5);
+  --brown: rgb(82, 42, 7);
+  --light-brown: rgba(82, 42, 7, 0.5);
   --green: #0c5c08;
 }
 
@@ -416,7 +416,7 @@ blockquote p {
 
 .form-control {
   height: 3em;
-  background-color: rgba(255, 84, 106, 0.15);
+  background-color: var(--light-brown);
 }
 
 .form-label {
