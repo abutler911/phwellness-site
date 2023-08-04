@@ -1,9 +1,9 @@
 :root {
-  --light-pink: #fad2d2;
-  --dark-pink: rgb(238, 189, 204);
+  --light-pink: rgba(241, 170, 198, 0.5);
+  --dark-pink: rgb(241, 170, 198);
   --red: #822003;
-  --brown: rgb(49, 35, 33);
-  --light-brown: rgba(49, 35, 33, 0.5);
+  --brown: rgb(50, 22, 22);
+  --light-brown: rgba(50, 22, 22, 0.5);
   --green: #0c5c08;
 }
 
@@ -199,7 +199,7 @@ p {
 }
 
 #main-button {
-  background-color: rgba(255, 84, 106, 0.5);
+  background-color: var(--dark-pink);
   color: white;
   border: none;
 }
@@ -216,7 +216,7 @@ p {
 }
 
 #consultant-button:hover {
-  background-color: rgba(255, 84, 106, 0.5);
+  background-color: var(--dark-pink);
   color: #fff;
   transition: 0.6s ease;
 }
@@ -224,7 +224,7 @@ p {
 #shop-now {
   font-size: 1em;
   font-weight: 800;
-  color: rgba(255, 84, 106, 0.69);
+  color: var(--dark-pink);
   outline: black;
 }
 
