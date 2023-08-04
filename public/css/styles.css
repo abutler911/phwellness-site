@@ -229,7 +229,7 @@ p {
 }
 
 #shop-now:hover {
-  color: rgba(255, 84, 106, 0.9);
+  color: var(--light-pink);
 }
 
 .product-image {
@@ -280,7 +280,7 @@ p {
 
 .subheading {
   font-family: "Playfair Display", serif;
-  color: rgba(255, 84, 106, 0.69);
+  color: var(--dark-pink);
   font-size: 1.6em;
   margin-bottom: 20px;
 }
@@ -305,7 +305,7 @@ p {
 }
 
 .free-trial-headline {
-  color: rgba(255, 84, 106, 0.69);
+  color: var(--dark-pink);
   font-size: 2em;
   font-weight: 700;
 }
@@ -354,7 +354,7 @@ blockquote p {
 
 .bi {
   font-size: 1.4em;
-  color: rgba(255, 84, 106, 0.69);
+  color: var(--dark-pink);
   margin-right: 10px;
 }
 
@@ -406,7 +406,7 @@ blockquote p {
 }
 
 .nav-link:hover {
-  color: rgba(255, 84, 106, 0.9);
+  color: var(--light-pink);
   transition: 0.2s;
 }
 
@@ -435,7 +435,7 @@ blockquote p {
   margin: auto;
   text-align: center;
   margin-bottom: 20px;
-  background-color: rgba(255, 84, 106, 0.15);
+  background-color: var(--light-pink);
   font-family: "Playfair Display", serif;
 }
 
@@ -446,7 +446,7 @@ blockquote p {
 }
 
 .card h2 {
-  color: rgba(255, 84, 106, 0.7);
+  color: var(--dark-pink);
 }
 
 .card p {
@@ -574,7 +574,7 @@ header img {
 }
 
 #backToTopBtn i {
-  color: rgba(255, 84, 106, 1);
+  color: var(--dark-pink);
 }
 
 #backToTopBtn i:hover {
