@@ -1,6 +1,6 @@
 :root {
   --light-pink: rgba(241, 170, 198, 0.5);
-  --dark-pink: rgb(241, 170, 198);
+  --dark-pink: rgba(237, 170, 198, 0.7);
   --red: #822003;
   --brown: rgb(50, 22, 22);
   --light-brown: rgba(50, 22, 22, 0.5);
@@ -154,9 +154,9 @@ p {
 }
 
 .main-image {
-  margin-top: 2em;
-  position: relative;
-  top: 0;
+  margin-top: 5em;
+  /* position: relative; */
+  top: 100;
   left: 0;
 }
 
@@ -376,6 +376,8 @@ blockquote p {
   z-index: 9999;
   position: absolute;
   transition: background-color 0.3s ease-in-out;
+  height: 140px;
+  margin-bottom: 20px;
 }
 
 .navbar-toggler {
@@ -383,9 +385,10 @@ blockquote p {
 }
 
 #logo {
-  height: 50px;
+  height: 60px;
   width: auto;
   margin-left: 10px;
+  transform: rotate(-20deg);
 }
 
 .nav-item {
