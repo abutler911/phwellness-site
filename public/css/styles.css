@@ -258,7 +258,7 @@ p {
 
 .btn {
   background-color: var(--brown);
-  color: var(--light-pink);
+  color: var(--dark-pink);
   font-size: 1.3em;
   font-weight: 600;
   box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
@@ -267,7 +267,7 @@ p {
 }
 
 .btn:hover {
-  background-color: var(--light-pink);
+  background-color: var(--dark-pink);
   color: var(--brown);
 }
 
@@ -391,12 +391,12 @@ blockquote p {
 .nav-item {
   font-size: 1.1em;
   margin-right: 10px;
-  color: var(--light-pink);
+  color: var(--dark-pink);
   font-weight: 800;
 }
 
 .nav-link {
-  color: var(--light-pink);
+  color: var(--dark-pink);
   font-size: 0.8em;
   font-weight: 800;
   margin-left: 0;
