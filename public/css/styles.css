@@ -389,6 +389,7 @@ blockquote p {
   width: auto;
   margin-left: 10px;
   transform: rotate(-15deg);
+  padding-bottom: 8px;
 }
 
 .nav-item {
