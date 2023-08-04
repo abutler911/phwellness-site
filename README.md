@@ -1,6 +1,6 @@
 # Activated Liquid Collagen Landing Page
 
-Welcome to the repository of the Jersey Glow Activated Liquid Collagen landing page. This project is the result of a focused and user-oriented effort to build a functional and attractive landing page for a small business. The purpose of the landing page is to effectively and efficiently direct potential customers to the main company webpage.
+Welcome to the repository of the PH Wellness Activated Liquid Collagen landing page. This project is the result of a focused and user-oriented effort to build a functional and attractive landing page for a small business. The purpose of the landing page is to effectively and efficiently direct potential customers to the main company webpage.
 
 The landing page uses straightforward and robust technologies including HTML, CSS, and Bootstrap to ensure maximum compatibility and responsive design across various devices and browsers.
 
@@ -20,4 +20,4 @@ We believe in the power of community and the potential of open source to continu
 
 For major changes, please open an issue first to discuss what you would like to change. Pull requests are always welcome.
 
-Together, we can ensure that the Jersey Glow Activated Liquid Collagen landing page remains a high-quality resource that truly serves the needs of its users. Thank you for your interest and support.
+Together, we can ensure that the PH Wellness Activated Liquid Collagen landing page remains a high-quality resource that truly serves the needs of its users. Thank you for your interest and support.
