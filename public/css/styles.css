@@ -1,9 +1,9 @@
 :root {
   --light-pink: rgba(241, 170, 198, 0.5);
-  --dark-pink: rgba(237, 170, 198, 0.7);
+  --dark-pink: rgba(237, 170, 198, 1);
   --red: #822003;
   --brown: rgb(50, 22, 22);
-  --light-brown: rgba(50, 22, 22, 0.5);
+  --light-brown: rgba(50, 22, 22, 0.2);
   --green: #0c5c08;
 }
 
@@ -27,6 +27,7 @@ body {
   line-height: 1.5;
   -webkit-font-smoothing: antialiased;
   font-size: 1.2em;
+  color: var(--brown);
 }
 
 img,
@@ -60,6 +61,40 @@ h6 {
   isolation: isolate;
 }
 
+.main {
+  position: relative;
+  width: 100%;
+  height: auto;
+  box-sizing: border-box;
+}
+
+.background-image {
+  background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)),
+    url("/public/imgs/background-collagen.jpg");
+  background-size: cover;
+  background-position: center;
+  padding: 20px;
+  color: white;
+}
+
+.overlaid-image1 {
+  position: absolute;
+  top: 50%;
+  left: 0;
+  width: 20%;
+  transform: translateY(-50%);
+  border-radius: 50%;
+}
+
+.overlaid-image2 {
+  position: absolute;
+  top: 50%;
+  right: 0;
+  width: 20%;
+  transform: translateY(-50%);
+  border-radius: 50%;
+}
+
 p {
   font-size: 1.2em;
 }
@@ -87,11 +122,6 @@ p {
   display: block;
   position: relative;
   overflow: hidden;
-}
-
-.main {
-  background-color: #fff;
-  padding: 10px;
 }
 
 .ingredients {
@@ -184,25 +214,11 @@ p {
 
 #main-button {
   background-color: var(--dark-pink);
-  color: #000;
   border: none;
-}
-
-#main-button:hover {
-  background-color: white;
-  color: black;
-  transition: 0.6s ease;
 }
 
 #consultant-button {
   background-color: #fff;
-  color: black; /* Matching text color */
-}
-
-#consultant-button:hover {
-  background-color: var(--dark-pink);
-  color: #fff;
-  transition: 0.6s ease;
 }
 
 #shop-now {
@@ -210,10 +226,6 @@ p {
   font-weight: 800;
   color: var(--dark-pink);
   outline: black;
-}
-
-#shop-now:hover {
-  color: var(--light-pink);
 }
 
 .product-image {
@@ -228,21 +240,19 @@ p {
 
 #get-the-glow {
   font-family: "Playfair Display", serif;
-  color: rgba(0, 0, 0, 1);
   font-size: 2em;
   text-align: center;
 }
 
 .tagline {
   font-family: "Playfair Display", serif;
-  color: rgba(0, 0, 0, 1);
   font-size: 1.4em;
   text-align: center;
 }
 
 .btn {
-  background-color: var(--brown);
-  color: var(--dark-pink);
+  background-color: var(--light-pink);
+  color: var(--brown);
   font-size: 1.3em;
   font-weight: 600;
   box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
@@ -250,14 +260,8 @@ p {
   margin-bottom: 20px;
 }
 
-.btn:hover {
-  background-color: var(--dark-pink);
-  color: var(--brown);
-}
-
 .section-heading {
   font-family: "Playfair Display", serif;
-  color: rgba(0, 0, 0, 1);
   font-size: 1.9em;
   margin-top: 20px;
 }
@@ -267,6 +271,9 @@ p {
   color: var(--dark-pink);
   font-size: 1.6em;
   margin-bottom: 20px;
+  background-color: var(--brown);
+  padding: 7px;
+  border-radius: 5px;
 }
 
 .img-thumbnail {
@@ -333,7 +340,6 @@ blockquote p {
 
 .resource h3 {
   font-size: 1.2em;
-  color: rgba(0, 0, 0, 1);
 }
 
 .bi {
@@ -341,8 +347,6 @@ blockquote p {
   color: var(--dark-pink);
   margin-right: 10px;
 }
-
-/* Helper classes */
 
 .bold {
   font-weight: 900;
@@ -355,6 +359,7 @@ blockquote p {
 .brown-header {
   height: 140px;
   background-color: var(--brown);
+  position: relative;
 }
 
 .container-fluid {
@@ -373,32 +378,6 @@ blockquote p {
   padding-bottom: 8px;
 }
 
-.nav-item {
-  font-size: 1.1em;
-  margin-right: 10px;
-  color: var(--dark-pink);
-  font-weight: 800;
-}
-
-.nav-link {
-  color: var(--dark-pink);
-  font-size: 0.8em;
-  font-weight: 800;
-  margin-left: 0;
-}
-
-.nav-link:hover {
-  color: var(--light-pink);
-  transition: 0.2s;
-}
-
-.navbar img {
-  width: 240px;
-  height: 90%;
-}
-
-/* form styling */
-
 .form-control {
   height: 3em;
   background-color: var(--light-brown);
@@ -406,7 +385,6 @@ blockquote p {
 
 .form-label {
   font-family: "Playfair Display", serif;
-  color: #000;
   font-size: 1.3em;
 }
 
@@ -436,7 +414,6 @@ blockquote p {
 }
 
 */ .price {
-  color: grey;
   font-size: 22px;
 }
 
@@ -447,20 +424,6 @@ blockquote p {
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
 }
 
-#quote {
-  text-align: right;
-  font-size: 0.9em;
-  color: rgb(184, 184, 184);
-  margin-bottom: 5px;
-}
-
-#author {
-  text-align: right;
-  font-size: 0.7em;
-  color: rgb(184, 184, 184);
-  margin-top: 5px;
-}
-
 .why-collagen-icons {
   width: 80px;
   height: auto;
@@ -468,11 +431,6 @@ blockquote p {
   margin: 0 auto;
   flex-direction: row;
 }
-
-/* header img {
-  height: 20vh;
-  width: 100%;
-} */
 
 .ingredients img {
   width: 150px;
@@ -491,13 +449,13 @@ blockquote p {
 }
 
 .ingredients-call-to-action {
-  margin-top: 20px;
   font-size: 2.6em;
   font-weight: 800;
 }
 
 .doc-links {
-  font-size: 0.9rem;
+  font-size: 0.4em;
+  color: var(--brown);
 }
 
 @media screen and (max-width: 768px) {
@@ -520,7 +478,7 @@ blockquote p {
   }
 
   .badge {
-    margin-top: -40px;
+    margin-top: -20px;
   }
 
   .main-image-slogan {
@@ -545,7 +503,6 @@ blockquote p {
   outline: none;
   background-color: transparent;
   opacity: 60%;
-  color: #000;
   cursor: pointer;
   padding: 15px;
   border-radius: 50%;
@@ -557,8 +514,4 @@ blockquote p {
 
 #backToTopBtn i {
   color: var(--dark-pink);
-}
-
-#backToTopBtn i:hover {
-  color: #000;
 }
