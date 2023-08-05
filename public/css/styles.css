@@ -64,13 +64,14 @@ p {
   font-size: 1.2em;
 }
 
-#header-image {
+}
+/* #header-image {
   height: 100px;
   object-fit: cover;
   background-position: center center;
   background-size: cover;
   background-repeat: no-repeat;
-}
+} */
 
 .badge {
   background-color: rgb(0, 167, 224);
@@ -367,20 +368,17 @@ blockquote p {
   text-align: justify;
 }
 
-/*Navbar */
-
-.navbar {
-  background-color: var(--brown);
-  width: 100%;
-  z-index: 9999;
-  position: absolute;
-  transition: background-color 0.3s ease-in-out;
+.brown-header {
   height: 140px;
-  margin-bottom: 20px;
+  background-color: var(--brown);
 }
 
-.navbar-toggler {
-  margin-right: 7px;
+.container-fluid {
+  height: 100%;
+  margin: 0; 
+  display: flex;
+  justify-content: center; 
+  align-items: center; 
 }
 
 #logo {
@@ -487,10 +485,10 @@ blockquote p {
   flex-direction: row;
 }
 
-header img {
+/* header img {
   height: 20vh;
   width: 100%;
-}
+} */
 
 .ingredients img {
   width: 150px;
