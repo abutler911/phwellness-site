@@ -103,9 +103,8 @@ p {
 }
 
 .ingredients {
-  background: linear-gradient(
-    360deg,
-    var(--light-brown),
+  background-image: radial-gradient(
+    rgba(158, 119, 110, 0.5),
     rgba(255, 255, 255, 1)
   );
 }
@@ -200,7 +199,7 @@ p {
 
 #main-button {
   background-color: var(--dark-pink);
-  color: white;
+  color: #000;
   border: none;
 }
 
@@ -387,7 +386,7 @@ blockquote p {
 #logo {
   height: 60px;
   width: auto;
-  margin-left: 10px;
+  margin: 0 auto;
   transform: rotate(-15deg);
   padding-bottom: 8px;
 }
