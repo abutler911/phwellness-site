@@ -69,33 +69,34 @@ h6 {
 }
 
 .background-image {
-  background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)),
+  background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)),
     url("/public/imgs/background-collagen.jpg");
   background-size: cover;
   background-position: center;
+  background-repeat: no-repeat;
   padding: 20px;
   color: white;
 }
 
-.overlaid-image1 {
-  position: absolute;
-  top: 50%;
-  left: 0;
-  width: 20%;
-  transform: translateY(-50%);
-  border-radius: 50%;
+.image-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
-.overlaid-image2 {
-  position: absolute;
-  top: 50%;
-  right: 0;
-  width: 20%;
-  transform: translateY(-50%);
-  border-radius: 50%;
+.text-content {
+  text-align: center;
 }
 
-p {
+/* For mobile view */
+@media (max-width: 992px) {
+  .image-content {
+    order: 1;
+    /* This makes the images appear above the text */
+  }
+}
+
+*/ p {
   font-size: 1.2em;
 }
 
@@ -125,10 +126,8 @@ p {
 }
 
 .ingredients {
-  background-image: radial-gradient(
-    rgba(158, 119, 110, 0.5),
-    rgba(255, 255, 255, 1)
-  );
+  background-image: radial-gradient(rgba(158, 119, 110, 0.5),
+      rgba(255, 255, 255, 1));
 }
 
 .featured-products {
@@ -147,10 +146,8 @@ p {
 }
 
 .testimonials {
-  background-image: radial-gradient(
-    rgba(158, 119, 110, 0.5),
-    rgba(255, 255, 255, 1)
-  );
+  background-image: radial-gradient(rgba(158, 119, 110, 0.5),
+      rgba(255, 255, 255, 1));
 }
 
 .influencers {
@@ -459,6 +456,7 @@ blockquote p {
 }
 
 @media screen and (max-width: 768px) {
+
   #main-button,
   #consultant-button {
     margin-bottom: 0;
