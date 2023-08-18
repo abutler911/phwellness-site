@@ -69,7 +69,7 @@ h6 {
 }
 
 .background-image {
-  background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)),
+  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
     url("/public/imgs/background-collagen.jpg");
   background-size: cover;
   background-position: center;
@@ -173,6 +173,7 @@ h6 {
 
 .main-title {
   font-size: 2.5em;
+
 }
 
 #health-icons {
@@ -204,26 +205,31 @@ h6 {
   font-weight: 600;
   border: 2px solid rgba(255, 84, 106, 0.2);
   width: 100%;
+  /* Full width within the container */
+  max-width: 200px;
+  /* Maximum width */
   height: 3em;
   box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
   border-radius: 7px;
+  display: inline-block;
+  /* Align buttons inline */
+  text-align: center;
+  /* Center the text */
 }
 
 #main-button {
   background-color: var(--dark-pink);
   border: none;
+  color: #fff;
+  /* Adjust text color if needed */
 }
 
 #consultant-button {
   background-color: #fff;
+  color: var(--dark-pink);
+  /* Adjust text color if needed */
 }
 
-#shop-now {
-  font-size: 1em;
-  font-weight: 800;
-  color: var(--dark-pink);
-  outline: black;
-}
 
 .product-image {
   border: 1px solid rgba(255, 84, 106, 0.1);
@@ -324,7 +330,7 @@ blockquote {
 
 blockquote p {
   display: inline;
-  font-size: 1.2em;
+  font-size: 1.1rem;
 }
 
 .resource {
