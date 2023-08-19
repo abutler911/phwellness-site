@@ -61,21 +61,11 @@ h6 {
   isolation: isolate;
 }
 
-.main {
-  position: relative;
-  width: 100%;
-  height: auto;
-  box-sizing: border-box;
-}
+
 
 .background-image {
-  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
-    url("/public/imgs/background-collagen.jpg");
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
-  padding: 20px;
-  color: white;
+  height: 100%;
+  width: 100%;
 }
 
 .image-content {
@@ -88,23 +78,9 @@ h6 {
   text-align: center;
 }
 
-/* For mobile view */
-@media (max-width: 992px) {
-  .image-content {
-    order: 1;
-    /* This makes the images appear above the text */
-  }
-}
 
 */ p {
   font-size: 1.2em;
-}
-
-.badge {
-  background-color: rgb(0, 167, 224);
-  font-size: 0.7em;
-  height: auto;
-  margin-top: 25vh;
 }
 
 #true-confidence-row {
@@ -173,6 +149,7 @@ h6 {
 
 .main-title {
   font-size: 2.5em;
+  color: white;
 
 }
 
@@ -201,33 +178,29 @@ h6 {
 
 #main-button,
 #consultant-button {
-  font-size: 1.1em;
+  font-size: 1.3rem;
   font-weight: 600;
   border: 2px solid rgba(255, 84, 106, 0.2);
-  width: 100%;
-  /* Full width within the container */
-  max-width: 200px;
-  /* Maximum width */
+  width: 200px;
   height: 3em;
+  line-height: 3em;
   box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
   border-radius: 7px;
-  display: inline-block;
-  /* Align buttons inline */
   text-align: center;
-  /* Center the text */
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
 }
 
 #main-button {
   background-color: var(--dark-pink);
   border: none;
   color: #fff;
-  /* Adjust text color if needed */
 }
 
 #consultant-button {
   background-color: #fff;
   color: var(--dark-pink);
-  /* Adjust text color if needed */
 }
 
 
@@ -360,9 +333,10 @@ blockquote p {
 }
 
 .brown-header {
-  height: 140px;
+  display: flex;
+  justify-content: center;
+  height: 120px;
   background-color: var(--brown);
-  position: relative;
 }
 
 .container-fluid {
@@ -374,12 +348,19 @@ blockquote p {
 }
 
 #logo {
-  height: 60px;
-  width: auto;
-  margin: 0 auto;
-  transform: rotate(-15deg);
-  padding-bottom: 8px;
+  height: 130px;
+  margin-top: 1.5%;
+  position: absolute;
+  transform: rotate(-10deg);
+  z-index: 1000;
 }
+
+.brown-band {
+  height: auto;
+  background-color: var(--brown);
+  display: block;
+}
+
 
 .form-control {
   height: 3em;
@@ -416,7 +397,7 @@ blockquote p {
   font-size: 0.7em;
 }
 
-*/ .price {
+.price {
   font-size: 22px;
 }
 
@@ -461,16 +442,31 @@ blockquote p {
   color: var(--brown);
 }
 
+@media (max-width: 992px) {
+  .image-content {
+    order: 1;
+  }
+}
+
 @media screen and (max-width: 768px) {
 
   #main-button,
   #consultant-button {
     margin-bottom: 0;
     padding: 10px 15px;
+    width: 100%;
+    height: 50%;
   }
 
-  .main-title h1 {
-    font-size: 3em;
+  #logo {
+    height: 100px;
+    margin-top: 12%;
+    padding-left: 10px;
+    padding-right: 10px;
+  }
+
+  .main-title {
+    font-size: 2.2rem;
   }
 
   #comparison-chart {
