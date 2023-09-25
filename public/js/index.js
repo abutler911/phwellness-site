@@ -2,7 +2,7 @@ const photos = [
   "./public/imgs/Good before-afters/01.jpg",
   "./public/imgs/Good before-afters/02.jpg",
   "./public/imgs/Good before-afters/03.jpg",
-  "./public/imgs/Good before-afters/04.jpg",
+  "./public/imgs/Good before-afters/04a.jpg",
   "./public/imgs/Good before-afters/05.jpg",
   "./public/imgs/Good before-afters/06.jpg",
   "./public/imgs/Good before-afters/07.jpg",
