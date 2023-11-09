@@ -116,6 +116,9 @@ h6 {
     top: 10px;
     margin-top: 175px;
   }
+  .award-container-adjust {
+    margin-top: 220px; /* This will push the entire container down by 20px */
+  }
 
   .award-image {
     max-width: 100px;
